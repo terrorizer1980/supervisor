@@ -1,14 +1,14 @@
 
 function loadES5() {
   var el = document.createElement('script');
-  el.src = '/api/hassio/app/frontend_es5/entrypoint.6ba12ae1.js';
+  el.src = '/api/hassio/app/frontend_es5/entrypoint.e4645d47.js';
   document.body.appendChild(el);
 }
 if (/.*Version\/(?:11|12)(?:\.\d+)*.*Safari\//.test(navigator.userAgent)) {
     loadES5();
 } else {
   try {
-    new Function("import('/api/hassio/app/frontend_latest/entrypoint.6a1c9a14.js')")();
+    new Function("import('/api/hassio/app/frontend_latest/entrypoint.a0b7d461.js')")();
   } catch (err) {
     loadES5();
   }
